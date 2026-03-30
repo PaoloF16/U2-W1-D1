@@ -50,6 +50,29 @@ main {
     padding: 2em 1em;
     margin-bottom:1.5em ;
 }
+.box2 {
+  background-color: lightcoral;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background-color: rgb(57, 170, 235);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
 section { 
     background-color: #e3e3e3;
     padding: 1em;
@@ -178,3 +201,150 @@ footer {
 footer a {
     color: fuchsia;
 }
+@media screen and (min-width: 768px){
+    main{  
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+main h1{
+    font-size: 6rem;
+}
+table {
+    margin: auto;
+}
+section h2{
+    background-color: #a7a5a5;
+    font-size: 1.5rem;
+}
+section{
+    text-align: center;
+}
+footer {
+    max-width: 768px;
+    
+    margin: auto;
+}
+    
+}
+@media screen and (min-width: 1200px){
+header,
+  main,
+  footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+    padding: 1.5em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: auto;
+  }
+
+  header div img {
+    margin: 0;
+    display: block;
+  }
+
+  header div p {
+    margin: 0;
+  }
+
+  header nav {
+    width: auto;
+    text-align: right;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.2em;
+  }
+
+  header nav li {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+
+  main {
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  table {
+    width: 70%;
+    margin: 0 auto 2em;
+  }
+
+  iframe {
+    height: 300px;
+    width: 550px;
+    float: left;
+  }
+
+  section {
+    text-align: left;
+  }
+
+  section h2 {
+    background-color: #b3b3b3;
+    padding: 0.6em;
+  }
+
+  article {
+    display: inline-block;
+    padding-right: 2em;
+  }
+
+  article section {
+    float: right;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    background-color:#dae2fa ;
+  }
+
+  article p,
+  article h2 {
+    font-size: 2rem;
+  }
+
+  input {
+    width: 75%;
+  }
+
+  button {
+    width: 20%;
+  }
+
+  footer {
+    padding: 2em;
+    font-size: 1.4em;
+  }
+
+  aside {
+    text-align: center;
+    width: 100%;
+  }
+
+  aside div {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    text-align: left;
+    background-color: #dae2fa;
+  }
