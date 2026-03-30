@@ -352,36 +352,60 @@ header,
   @media print {
   body {
     background: none;
-    color: black;
+    color: #000;
     font-size: 12pt;
+    padding: 0;
+    margin: 0;
   }
 
   header,
   nav,
   footer,
+  aside,
   iframe,
   button,
-  aside {
+  input {
     display: none;
   }
 
   main {
-    width: 100%;
+    background: white;
+    box-shadow: none;
     margin: 0;
-    padding: 0;
+    padding: 1em;
+    width: 100%;
   }
 
-  h1, h2 {
-    color: black;
+  article,
+  section {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+
+  h1, h2, p, li, a, strong {
+    color: #000;
   }
 
   a {
-    color: black;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
-  table, th, td {
-    border: 1px solid black;
+  table {
+    width: 100%;
     border-collapse: collapse;
+    page-break-before: always;
+  }
+
+  th,
+  td {
+    border: 1px solid #999;
+    padding: 6px;
+    text-align: center;
+  }
+
+  .box1,
+  .box2 {
+    background: none;
   }
 }
