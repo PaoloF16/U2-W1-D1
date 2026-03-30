@@ -348,3 +348,40 @@ header,
     text-align: left;
     background-color: #dae2fa;
   }
+
+  @media print {
+  body {
+    background: none;
+    color: black;
+    font-size: 12pt;
+  }
+
+  header,
+  nav,
+  footer,
+  iframe,
+  button,
+  aside {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2 {
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+}
